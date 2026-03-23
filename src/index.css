@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Britney Light';
+  src: url('/fonts/BrittanySignatureScript.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stardom';
+  src: url('/fonts/Stardom-Regular.woff2') format('woff2'),
+    url('/fonts/Stardom-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "tailwindcss";
+
+@theme {
+  --color-charcoal: #111111;
+  --color-gold: #D4AF37;
+  --color-bronze: #975D00;
+  --color-oxblood: #63031A;
+
+  --font-serif: "Playfair Display", serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+  --font-arabic: "Aref Ruqaa", serif;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #root {
+    background: var(--color-charcoal);
+    color: white;
+    font-family: var(--font-montserrat);
+    width: 100%;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+}
